@@ -6,7 +6,8 @@ os.makedirs("output", exist_ok=True)
 
 text = input("Enter text or URL: ")
 
-img = qrcode.make(text)
+filename = input("Enter file name: ")
+img.save(f"output/{filename}.png")
 
 img.save("output/qr.png")
 
